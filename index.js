@@ -62,5 +62,5 @@ app.get('/orders', (req, res) => {
     { id: "ORD003", item: "Graphic Tee",   status: "Processing",       eta: "20 mins" }
   ]);
 });
-
+app.use(express.static('.'));
 app.listen(PORT, () => console.log(`✅ API running on http://localhost:${PORT}`));
